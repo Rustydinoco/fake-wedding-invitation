@@ -19,10 +19,12 @@ body::-webkit-scrollbar {
     height: 100%;
     background-image: url(img/nathan-dumlao-5BB_atDT4oA-unsplash.jpg);
     background-size: cover;
+    background-position: center;
     z-index: -1;
 
 }
   
+
 
 
 .hero {
@@ -31,7 +33,6 @@ body::-webkit-scrollbar {
 
 
 }
-
 
 .hero h1 {
     font-family: 'Sacramento', cursive;
@@ -65,9 +66,88 @@ body::-webkit-scrollbar {
         font-size: 65%;
     }
     
+    
 }@media (max-width:576px){
     html{
         font-size:60%;
     }
     
+}
+@media (max-width: 768px) {
+    .hero::before {
+        background-size: cover;
+      
+    }
+}
+
+/* For screens with a width between 768px and 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .hero::before {
+        background-size: cover;
+    }
+}
+
+/* For screens with a width greater than 1200px */
+@media (min-width: 1201px) {
+    .hero::before {
+        background-size: cover;
+    }
+}
+
+ 
+ 
+.hero-2{
+    background-image: url(img/Default.PNG);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0px 100px;
+   
+}
+.hero-2 .kutipan{
+    max-width:650px ;
+    margin-top: 10px;
+    border: 1px transparent;
+    border-radius: 60% ;
+    padding: 50px 140px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+
+
+.hero-2 .kutipan img{
+    width:120px;
+    height: 100px;
+    color: pink;
+}
+
+.hero-2 .kutipan h1{
+    color: palevioletred;
+}
+
+.hero-2 .kutipan .ayat {
+    color: palevioletred;
+    font-weight: 800;
+}
+
+@media (max-width:992px){
+    .hero-2 .kutipan{
+        max-width: 550px;
+        padding:80px;
+    }
+}
+
+@media (max-width:768px){
+    .hero-2 .kutipan{
+        border-radius: 50% 50% 0 0;
+        max-width: 400px;
+        padding:80px;
+    }
+    
+    
+}@media (max-width:576px){
+    .hero-2 .kutipan{
+        border-radius: 50% 50% 0 0;
+        max-width: 350px;
+        padding:60px;} 
 }
