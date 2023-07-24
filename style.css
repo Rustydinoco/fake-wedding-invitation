@@ -1,7 +1,7 @@
 body {
     font-size: 1.2rem;
     font-family: 'Lora', serif;
-    min-height: 3000px;
+    
     scroll-behavior: smooth;
 
 }
@@ -36,19 +36,22 @@ body::-webkit-scrollbar {
 
 .hero h1 {
     font-family: 'Sacramento', cursive;
-    font-size: 3.5rem;
+    font-size: 5rem;
 }
 
 .hero h5 {
     letter-spacing: 3px;
-  
+    font-size: 1.6rem;
 }
+
 
 .hero h6 {
    
     letter-spacing: 5px;
     margin-top: 10px;
+    font-size: 1.4rem;
 }
+
 
 .hero a {
     background-color: transparent;
@@ -90,6 +93,11 @@ body::-webkit-scrollbar {
 
 /* For screens with a width greater than 1200px */
 @media (min-width: 1201px) {
+    .hero::before {
+        background-size: cover;
+    }
+}
+@media (min-width: 370px) {
     .hero::before {
         background-size: cover;
     }
@@ -152,8 +160,11 @@ body::-webkit-scrollbar {
         max-width: 350px;
         padding:60px;} 
 }
+
+
+
 .person{
-    min-height: 110vh;
+    min-height: 100vh;
     background-color: #EAE4D4;
 }
 
@@ -204,4 +215,114 @@ body::-webkit-scrollbar {
     margin-top: 50px;
     font-size: 4rem;
     border-radius: 20px;
+}
+
+@media (width:576px){
+    .grooms-img img{
+        border-radius: 20px;
+        width: 250px;
+       } 
+}
+@media (width:576px){
+    .brides-img img{
+        border-radius: 20px;
+        width: 250px;
+        } 
+}
+.alamat{
+    background-image:url(img/pexels-eberhard-grossgasteiger-2088208.jpg) ;
+    background-size:cover ;
+    background-position: center;
+    min-height: 80vh;
+    z-index: -1;
+}
+
+
+
+.title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-weight: bolder;
+        
+       
+}
+
+.box-1{
+    background-color: #EAE4D4;
+    border: 1px transparent;
+    padding: 20px;
+    border-radius: 30px;
+    margin:20px;
+    
+}
+.box-2{
+    background-color: #EAE4D4;
+    border: 1px transparent;
+    padding: 20px;
+    border-radius: 30px;
+    margin:20px;
+    
+}
+
+
+  .box-1 h1 {
+    font-weight: bolder;
+    color: rgb(207, 145, 63);
+    letter-spacing: 3px;
+  } 
+
+  .box-2 h1 {
+    font-weight: bolder;
+    color: rgb(207, 145, 63);
+    letter-spacing: 3px;
+  } 
+
+  .box-1 h2 {
+    font-weight: bold;
+    color: rgb(207, 145, 63);
+  } 
+
+  .box-2 h2 {
+    font-weight: bold;
+    color: rgb(207, 145, 63);
+  } 
+  .box-1 h4 {
+    color: rgb(207, 145, 63);
+  } 
+
+  .box-2 h4 {
+    color: rgb(207, 145, 63);
+  } 
+
+
+
+
+@media (max-width: 768px) {
+     .alamat {
+        background-size: cover;
+    }
+    .content{
+        width: auto;
+    }
+}
+
+/* For screens with a width between 768px and 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .alamat {
+        background-size: cover;
+    }
+}
+
+/* For screens with a width greater than 1200px */
+@media (min-width: 1201px) {
+    .alamat {
+        background-size: cover;
+    }
+}
+@media (min-width: 370px) {
+    .alamat {
+        background-size: cover;
+    }
 }
